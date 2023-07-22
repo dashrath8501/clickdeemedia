@@ -39,17 +39,17 @@ h1, h2, h3, h4, h5, h6 {
   50% {background-color: #99a3be;}
   100% {background-color: $color1;}
 }
-.main {
+.body {
   position: relative;
   max-width: 100%;
-  .choose {
+  .industry {
       position: relative;
       padding: 50px 0 ;
       .container-fluid {
           position: relative;
           display: block;
           width: 100%;
-          .choose-left {
+          .industry-left {
               padding: 0 calc(10.66667*1vw) 0 calc(10.66667*1vw);
               margin: 0 auto;
               max-width: 500px;
@@ -69,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
               }
           }
           .col-12 {
-                  .chooseitem {
+                  .industryitem {
                       height: 100%;
                       transform: scale(1);
                       transition: transform .25s cubic-bezier(.165,.84,.44,1);
-                      .chooseitem-background{
+                      .industryitem-background{
                           background-color: $color3;
                           position: absolute;
                           top: 0;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
                           transform: scale(1);
                           transition: all .5s cubic-bezier(.165,.84,.44,1);
                           overflow: hidden;
-                          .chooseitem-backgroundhover {
+                          .industryitem-backgroundhover {
                               background-color: #fff;
                               display: block;
                               width: 230%;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
                                   align-items: flex-end;
                                   justify-content: flex-start;
                                   position: relative;
-                                  svg {
+                                  img {
                                       width: 65px;
                                       height: 60px;
                                       left: 0px;
@@ -149,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media only screen and (min-width:740px){
-  .main {
-      .choose {
+  .body {
+      .industry {
           padding: 0;
           position: relative;
           margin: 0;
           .container-fluid{
-              .choose-left{
+              .industry-left{
                   padding: calc(5.55556*1vw) calc(6.94444*1vw) calc(2.77778*1vw);
                   .title-container{
                       h3 {
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
                   }
               }
               .col-12{
-                      .chooseitem{
+                      .industryitem{
                           .item-content{
                               padding: calc(4.79167*1vw) calc(3.47222*1vw);
                               h3 {
@@ -202,37 +202,37 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media only screen and (max-width:740px) {
-  .main {
-      .choose{
+  .body {
+      .industry{
           .container-fluid{
               .col-12{
-                      .chooseitem {
+                      .industryitem {
                           .item-content{
                               .item-iconholder {
-                                  svg {
+                                  img {
                                       margin-top: -25px !important;
                                   }
                               }
                           }
                   }
                 &:nth-child(2n){
-                    .chooseitem-background {
+                    .industryitem-background {
                         background-color: #f7f9fb !important;
                     }
                 }
-                .chooseitem-background {
+                .industryitem-background {
                     background-color: #fff !important;
                 }
                 &:nth-child(odd) {
                     &:hover {
-                        .chooseitem-background {
-                            .chooseitem-backgroundhover {
+                        .industryitem-background {
+                            .industryitem-backgroundhover {
                                 background-color: #fff !important;
                             }
                         }
                     }
-                    .chooseitem-background {
-                        .chooseitem-backgroundhover {
+                    .industryitem-background {
+                        .industryitem-backgroundhover {
                             background-color:#f7f9fb !important;
                         }
                     }
@@ -243,10 +243,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (min-width:991px) {
-  .main {
-      .choose {
+  .body {
+      .industry {
           .col-12{
-                  .chooseitem {
+                  .industryitem {
                       cursor: pointer;
                       .item-content {
                           transition: transform .5s cubic-bezier(.165,.84,.44,1);
@@ -257,10 +257,10 @@ h1, h2, h3, h4, h5, h6 {
                       }
                       &:hover {
                           z-index: 1;
-                          .chooseitem-background {
+                          .industryitem-background {
                               transform: scale(1.05);
                               box-shadow: 0 calc(1.38889*1vw) calc(2.77778*1vw) rgba(0,0,0,.05);
-                              .chooseitem-backgroundhover {
+                              .industryitem-backgroundhover {
                                   transform: translate(-50%,50%) scale(1);
                               }
                           }
@@ -275,23 +275,23 @@ h1, h2, h3, h4, h5, h6 {
                     }
 
                     &:nth-child(2n){
-                        .chooseitem-background {
+                        .industryitem-background {
                             background-color: #f7f9fb !important;
                         }
                     }
-                    .chooseitem-background {
+                    .industryitem-background {
                         background-color: #fff !important;
                     }
                     &:nth-child(odd) {
                         &:hover {
-                            .chooseitem-background {
-                                .chooseitem-backgroundhover {
+                            .industryitem-background {
+                                .industryitem-backgroundhover {
                                     background-color: #fff !important;
                                 }
                             }
                         }
-                        .chooseitem-background {
-                            .chooseitem-backgroundhover {
+                        .industryitem-background {
+                            .industryitem-backgroundhover {
                                 background-color:#f7f9fb !important;
                             }
                         }
@@ -301,16 +301,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (min-width:1199.99px){
-  .main {
-      .choose {
+  .body {
+      .industry {
           .container-fluid {
-              .choose-left {
+              .industry-left {
                   padding: calc(5.55556*1vw) calc(6.94444*1vw) calc(2.77778*1vw);
                   height: calc(25.34722*1vw);
                   max-width: 100%;
               }
               .col-12 {
-                  .chooselist-container {
+                  .industrylist-container {
                       padding: 0;
                   }
               }
@@ -319,10 +319,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (min-width:1399.99px){
-  .main {
-      .choose{
+  .body {
+      .industry{
           .container-fluid{
-              .choose-left {
+              .industry-left {
                   padding:calc(5.55556*1vw) calc(4.94444*1vw) calc(2.77778*1vw) calc(6.94444*1vw);
                   .title-container {
                       h2 {
@@ -338,10 +338,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (min-width:1500px) {
-  .main {
-      .choose {
+  .body {
+      .industry {
           .container-fluid {
-              .choose-left{
+              .industry-left{
                   p {
                       font-size: 17px;
                   }
